@@ -80,16 +80,16 @@ export default function Index() {
               Premium copper cables engineered for safety, reliability, and peak performance in modern infrastructure.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild variant="default" size="lg" className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-6 text-lg rounded-full">
+              <Button asChild variant="default" size="lg" className="bg-transparent border border-white text-white hover:bg-white hover:text-[#0A2E57] px-8 py-6 text-lg rounded-full transition-colors">
                 <Link href="/products" className="flex items-center gap-2">
                   Explore Our Products <ArrowRight size={20} />
                 </Link>
               </Button>
-                             <Button asChild variant="default" size="lg" className="bg-[#1E90FF] hover:bg-[#0A7AEA] hover:border-2 hover:border-white text-white px-8 py-6 text-lg rounded-full">
-                 <Link href="/contact" className="flex items-center gap-2">
-                   Contact Sales <ChevronRight size={20} />
-                 </Link>
-               </Button>
+              <Button asChild variant="default" size="lg" className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-6 text-lg rounded-full transition-colors">
+                <Link href="/contact" className="flex items-center gap-2">
+                  Contact Sales <ChevronRight size={20} />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -300,16 +300,16 @@ export default function Index() {
             Our engineering team can develop tailored specifications for your unique requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate opacity-0 translate-y-5 transition-all duration-1000">
-            <Button asChild variant="secondary" size="lg" className="bg-white text-[#1E90FF] hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
+            <Button asChild variant="secondary" size="lg" className="bg-transparent border border-white text-white hover:bg-white hover:text-[#0A2E57] px-8 py-6 text-lg rounded-full transition-colors">
               <Link href="/contact" className="flex items-center gap-2">
                 Request a Quote <ArrowRight size={20} />
               </Link>
             </Button>
-                         <Button asChild variant="default" size="lg" className="bg-[#1E90FF] hover:bg-[#0A7AEA] hover:border-2 hover:border-white text-white px-8 py-6 text-lg rounded-full">
-               <Link href="/products" className="flex items-center gap-2">
-                 Browse Products <ChevronRight size={20} />
-               </Link>
-             </Button>
+            <Button asChild variant="default" size="lg" className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-6 text-lg rounded-full transition-colors">
+              <Link href="/products" className="flex items-center gap-2">
+                Browse Products <ChevronRight size={20} />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

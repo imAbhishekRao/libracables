@@ -24,7 +24,7 @@ const products = [
     applications: ["Instrumentation", "Signal control", "PLC systems"],
   },
   {
-    name: "FR/FRLS/FRZH Cables",
+    name: "Solar Cables",
     description: "Flame-retardant cable range designed for enhanced fire safety and low smoke emission.",
     applications: ["Public infrastructure", "Commercial buildings", "Critical facilities"],
   },

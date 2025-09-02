@@ -125,31 +125,31 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/products/house-wiring" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
+                <Link href="/products" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
                   <ChevronRight size={16} className="mr-1 group-hover:translate-x-1 transition-transform opacity-0 group-hover:opacity-100" />
                   House Wiring Cables
                 </Link>
               </li>
               <li>
-                <Link href="/products/submersible" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
+                <Link href="/products" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
                   <ChevronRight size={16} className="mr-1 group-hover:translate-x-1 transition-transform opacity-0 group-hover:opacity-100" />
                   Submersible Cables
                 </Link>
               </li>
               <li>
-                <Link href="/products/industrial" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
+                <Link href="/products" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
                   <ChevronRight size={16} className="mr-1 group-hover:translate-x-1 transition-transform opacity-0 group-hover:opacity-100" />
                   Industrial Cables
                 </Link>
               </li>
               <li>
-                <Link href="/products/solar" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
+                <Link href="/products" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
                   <ChevronRight size={16} className="mr-1 group-hover:translate-x-1 transition-transform opacity-0 group-hover:opacity-100" />
                   Solar Cables
                 </Link>
               </li>
               <li>
-                <Link href="/products/control" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
+                <Link href="/products" className="text-white/80 hover:text-[#1E90FF] transition-colors flex items-center group">
                   <ChevronRight size={16} className="mr-1 group-hover:translate-x-1 transition-transform opacity-0 group-hover:opacity-100" />
                   Control Cables
                 </Link>
@@ -185,7 +185,7 @@ export default function Footer() {
             </ul>
             
             <div className="mt-6">
-              <Button asChild className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white rounded-full">
+              <Button asChild className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white rounded-full transition-colors">
                 <Link href="/contact" className="flex items-center">
                   Request a Quote <ChevronRight size={16} className="ml-1" />
                 </Link>
@@ -202,7 +202,6 @@ export default function Footer() {
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-white/60 hover:text-[#1E90FF] transition-colors text-sm">Privacy Policy</Link>
             <Link href="/terms" className="text-white/60 hover:text-[#1E90FF] transition-colors text-sm">Terms of Service</Link>
-            <Link href="/sitemap" className="text-white/60 hover:text-[#1E90FF] transition-colors text-sm">Sitemap</Link>
           </div>
         </div>
       </div>

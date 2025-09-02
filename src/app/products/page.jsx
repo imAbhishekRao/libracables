@@ -48,16 +48,16 @@ const products = [
     description: "For precise signal and power control in various industrial applications.",
     applications: ["Instrumentation", "Signal control", "PLC systems"],
     icon: Settings,
-    image: "/product-control-cables.jpg",
+    image: "/controlCabel.png",
     features: ["EMI shielded", "Precision engineered", "Multiple cores", "Reliable performance"]
   },
   {
-    name: "FR/FRLS/FRZH Cables",
-    description: "Flame-retardant cable range designed for enhanced fire safety and low smoke emission.",
-    applications: ["Public infrastructure", "Commercial buildings", "Critical facilities"],
+    name: "Solar Cables",
+    description: "High-performance cables specifically designed for solar power systems and renewable energy applications.",
+    applications: ["Solar panels", "Solar inverters", "Renewable energy systems"],
     icon: Flame,
-    image: "/product-fr-cables.jpg",
-    features: ["Flame retardant", "Low smoke emission", "Zero halogen", "Enhanced safety"]
+    image: "/solar_cabel.png",
+    features: ["UV resistant", "Weatherproof", "High conductivity", "Long lifespan"]
   },
 ];
 
@@ -119,8 +119,8 @@ export default function Products() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-16 bg-[#E6F4FF]" ref={sectionRef}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 bg-[#E6F4FF]" ref={sectionRef}>
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
           <div className={`transition-all duration-1000 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="text-center mb-16">
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Product <span className="text-[#1E90FF]">Range</span></h2>
@@ -129,7 +129,7 @@ export default function Products() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 px-4 sm:px-0">
               {products.map((product) => (
                 <Card 
                   key={product.name} 
@@ -143,7 +143,7 @@ export default function Products() {
                         src={product.image} 
                         alt={product.name} 
                         fill 
-                        style={{ objectFit: "cover" }} 
+                        style={{ objectFit: "contain" }} 
                         className="group-hover:scale-105 transition-transform duration-500" 
                       />
                       <div className="absolute top-4 left-4 p-3 rounded-full bg-white/90 shadow-md">
@@ -261,12 +261,12 @@ export default function Products() {
             Our engineering team can develop tailored specifications for your unique requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button asChild variant="secondary" size="lg" className="bg-white text-[#1E90FF] hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
+            <Button asChild variant="secondary" size="lg" className="bg-transparent border border-white text-white hover:bg-white hover:text-[#0A2E57] px-8 py-6 text-lg rounded-full transition-colors">
               <Link href="/contact" className="flex items-center gap-2">
                 Contact Our Team <ArrowRight size={20} />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full">
+            <Button asChild variant="outline" size="lg" className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-6 text-lg rounded-full transition-colors">
               <Link href="/downloads" className="flex items-center gap-2">
                 Download Catalog <Download size={20} />
               </Link>

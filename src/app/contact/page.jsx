@@ -319,7 +319,7 @@ export default function ContactPage() {
           </div>
           
           <div className="text-center mt-12">
-            <Button asChild variant="outline" className="rounded-full border-[#1E90FF] text-[#1E90FF] hover:bg-[#E6F4FF]">
+            <Button asChild variant="outline" className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white rounded-full transition-colors">
               <a href="/faq" className="flex items-center gap-2">
                 View All FAQs <ChevronRight size={18} />
               </a>
