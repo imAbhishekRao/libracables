@@ -77,12 +77,12 @@ export default function AboutPage() {
                 powering progress across India with reliable and innovative wiring solutions from our facility in Delhi.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-6 text-lg rounded-full">
+                <Button asChild className="bg-[#1E90FF] hover:bg-white text-white hover:text-[#1E90FF] px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-[#1E90FF] hover:border-[#1E90FF]">
                   <Link href="/products" className="flex items-center gap-2">
                     Our Products <ArrowRight size={20} />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full">
+                <Button asChild className="bg-[#1E90FF] hover:bg-white text-white hover:text-[#1E90FF] px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-[#1E90FF] hover:border-[#1E90FF]">
                   <Link href="/contact" className="flex items-center gap-2">
                     Contact Us <ChevronRight size={20} />
                   </Link>
@@ -308,12 +308,12 @@ export default function AboutPage() {
             Contact us today to discuss your requirements and discover the Libra Cables difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild variant="secondary" size="lg" className="bg-white text-[#1E90FF] hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
+            <Button asChild size="lg" className="bg-[#1E90FF] hover:bg-white text-white hover:text-[#1E90FF] px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-[#1E90FF] hover:border-[#1E90FF]">
               <Link href="/contact" className="flex items-center gap-2">
                 Get in Touch <ArrowRight size={20} />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full">
+            <Button asChild size="lg" className="bg-[#1E90FF] hover:bg-white text-white hover:text-[#1E90FF] px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-[#1E90FF] hover:border-[#1E90FF]">
               <Link href="/products" className="flex items-center gap-2">
                 Explore Products <ChevronRight size={20} />
               </Link>
