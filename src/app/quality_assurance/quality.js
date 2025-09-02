@@ -43,13 +43,14 @@ export default function QualityPage() {
       { threshold: 0.1 }
     );
     
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
     
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -94,7 +95,7 @@ export default function QualityPage() {
                   Our <span className="text-[#1E90FF]">Quality Promise</span>
                 </h2>
                 <p className="text-[#4A4A4A] mb-6 leading-relaxed">
-                  At Libra Cables, quality isn't just a department—it's embedded in every aspect of our 
+                  At Libra Cables, quality isn&apos;t just a department—it embedded in every aspect of our 
                   manufacturing process. From raw material selection to final product testing, we maintain 
                   rigorous standards to ensure our cables deliver exceptional performance and safety.
                 </p>

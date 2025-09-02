@@ -116,8 +116,8 @@ export default function TermsConditions() {
                       you agree to be bound by these terms and conditions.
                     </p>
                     <p>
-                      Libra Cables ("we", "us", or "our") operates the website www.libracables.com 
-                      (the "Site") and sells copper cables and related products (the "Products").
+                      Libra Cables (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) operates the website www.libracables.com 
+                      (the &quot;Site&quot;) and sells copper cables and related products (the &quot;Products&quot;).
                     </p>
                   </section>
 
@@ -126,11 +126,11 @@ export default function TermsConditions() {
                     <h2>2. Definitions</h2>
                     <p>In these Terms and Conditions:</p>
                     <ul>
-                      <li><strong>"Customer"</strong> means the person or entity purchasing Products from us.</li>
-                      <li><strong>"Order"</strong> means a request by the Customer to purchase Products from us.</li>
-                      <li><strong>"Products"</strong> means the copper cables and related items offered for sale on our Site.</li>
-                      <li><strong>"Site"</strong> means our website at www.libracables.com.</li>
-                      <li><strong>"Writing"</strong> includes email and other digital communications.</li>
+                      <li><strong>&quot;Customer&quot;</strong> means the person or entity purchasing Products from us.</li>
+                      <li><strong>&quot;Order&quot;</strong> means a request by the Customer to purchase Products from us.</li>
+                      <li><strong>&quot;Products&quot;</strong> means the copper cables and related items offered for sale on our Site.</li>
+                      <li><strong>&quot;Site&quot;</strong> means our website at www.libracables.com.</li>
+                      <li><strong>&quot;Writing&quot;</strong> includes email and other digital communications.</li>
                     </ul>
                   </section>
 
@@ -164,7 +164,8 @@ export default function TermsConditions() {
                     <h3>4.1 Payment Methods</h3>
                     <p>
                       We accept various payment methods including bank transfer, demand draft, and online 
-                      payment gateways. Payment terms may vary based on the Customer's creditworthiness 
+                      payment gateways. Payment terms may vary based on the Customer&apos;s creditworthiness 
+                      
                       and order history.
                     </p>
                     

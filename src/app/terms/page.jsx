@@ -197,7 +197,7 @@ export default function TermsConditions() {
                     <h3>4.1 Payment Methods</h3>
                     <p>
                       We accept various payment methods including bank transfer, demand draft, and online 
-                      payment gateways. Payment terms may vary based on the Customer's creditworthiness 
+                      payment gateways. Payment terms may vary based on the Customer&apos;s creditworthiness 
                       and order history.
                     </p>
                     

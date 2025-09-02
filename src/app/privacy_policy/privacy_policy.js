@@ -226,7 +226,7 @@ export default function PrivacyPolicy() {
                       <li><strong>Objection:</strong> The right to object to processing of your personal information</li>
                     </ul>
                     <p>
-                      To exercise any of these rights, please contact us using the details provided in the "Contact Us" section.
+                      To exercise any of these rights, please contact us using the details provided in the &quot;Contact Us&quot; section.
                     </p>
                   </section>
 
@@ -246,7 +246,7 @@ export default function PrivacyPolicy() {
                   <section id="policy-changes" className="scroll-mt-24 pt-12">
                     <h2>8. Policy Changes</h2>
                     <p>
-                      We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
+                      We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date.
                     </p>
                     <p>
                       You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
