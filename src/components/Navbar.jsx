@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#0a192f]/90 backdrop-blur-md fixed w-full z-50 py-3 border-b border-[#64ffda]/10">
-      <div className="max-w-6xl mx-auto px-8 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-[#64ffda] flex items-center">
           <Bolt className="mr-3" />
           <span>Libra Cables</span>

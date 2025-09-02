@@ -71,7 +71,7 @@ export default function Index() {
           </div>
         </div>
         
-        <div className="container mx-auto relative z-10 py-20 px-4 text-center">
+        <div className="max-w-7xl mx-auto relative z-10 py-20 px-4 sm:px-8 lg:px-8 text-center">
           <div className="animate opacity-0 translate-y-5 transition-all duration-1000">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl max-w-3xl mx-auto font-bold text-white">
               Powering Progress <span className="text-[#00C4CC]">with Precision</span>
@@ -104,7 +104,7 @@ export default function Index() {
 
       {/* Stats Section */}
       <section className="bg-gradient-to-b from-[#F0F8FF] to-[#E6F4FF] py-12">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {[
               { number: "500+", label: "Projects Completed" },
@@ -127,7 +127,7 @@ export default function Index() {
 
       {/* Why Choose Us Section */}
       <section className="bg-[#F8FBFF] py-16" ref={sectionRef}>
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-12 animate opacity-0 translate-y-5 transition-all duration-1000">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Why Choose <span className="text-[#1E90FF]">Libra Cables</span></h2>
             <p className="text-lg text-[#1A1A1A] max-w-2xl mx-auto font-medium">
@@ -183,7 +183,7 @@ export default function Index() {
 
       {/* Product Highlights */}
       <section className="bg-[#F8FBFF] py-16">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
                   <div className="text-center mb-12 animate opacity-0 translate-y-5 transition-all duration-1000">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Our <span className="text-[#4A4A4A]">Product Range</span></h2>
           <p className="text-lg text-[#1A1A1A] max-w-2xl mx-auto font-medium">
@@ -258,7 +258,7 @@ export default function Index() {
 
       {/* Industries We Serve */}
       <section className="bg-[#F0F8FF] py-16">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
         <div className="text-center mb-12 animate opacity-0 translate-y-5 transition-all duration-1000">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Industries We <span className="text-[#1E90FF]">Serve</span></h2>
           <p className="text-lg text-[#1A1A1A] max-w-2xl mx-auto font-medium">
@@ -294,7 +294,7 @@ export default function Index() {
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 text-center">
           <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 animate opacity-0 translate-y-5 transition-all duration-1000">Need Custom Cable Solutions?</h3>
           <p className="text-lg text-white/90 max-w-2xl mx-auto mb-8 animate opacity-0 translate-y-5 transition-all duration-1000">
             Our engineering team can develop tailored specifications for your unique requirements.

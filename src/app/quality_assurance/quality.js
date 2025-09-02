@@ -75,7 +75,7 @@ export default function QualityPage() {
           ))}
         </div>
         
-        <div className="container mx-auto px-4 relative z-10 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 relative z-10 text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
             Quality <span className="text-[#00C4CC]">Assurance</span>
           </h1>
@@ -87,7 +87,7 @@ export default function QualityPage() {
 
       {/* Quality Intro */}
       <section className="py-16 bg-white" ref={sectionRef}>
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className={`transition-all duration-1000 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -134,7 +134,7 @@ export default function QualityPage() {
 
       {/* Quality Pillars */}
       <section className="py-16 bg-[#E6F4FF]">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Pillars of <span className="text-[#1E90FF]">Our Quality</span></h2>
             <p className="text-lg text-[#4A4A4A] max-w-2xl mx-auto">
@@ -185,7 +185,7 @@ export default function QualityPage() {
 
       {/* Testing Process */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Comprehensive <span className="text-[#1E90FF]">Testing Process</span></h2>
             <p className="text-lg text-[#4A4A4A] max-w-2xl mx-auto">
@@ -264,7 +264,7 @@ export default function QualityPage() {
 
       {/* Certifications */}
       <section className="py-16 bg-[#E6F4FF]">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Certifications & <span className="text-[#1E90FF]">Standards</span></h2>
             <p className="text-lg text-[#4A4A4A] max-w-2xl mx-auto">
@@ -310,7 +310,7 @@ export default function QualityPage() {
 
       {/* Quality Metrics */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Quality <span className="text-[#1E90FF]">Performance</span></h2>
             <p className="text-lg text-[#4A4A4A] max-w-2xl mx-auto">
@@ -351,7 +351,7 @@ export default function QualityPage() {
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 text-center">
           <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">Have Quality Requirements?</h3>
           <p className="text-lg text-white/90 max-w-2xl mx-auto mb-8">
             Our quality team is ready to address your specific requirements and provide detailed certifications.

@@ -66,7 +66,7 @@ export default function AboutPage() {
           ))}
         </div>
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
@@ -103,7 +103,7 @@ export default function AboutPage() {
 
       {/* Stats Section */}
       <section className="bg-gradient-to-b from-[#E6F4FF] to-[#D1E9FF] py-12">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {[
               { number: "25+", label: "Years Experience" },
@@ -125,7 +125,7 @@ export default function AboutPage() {
 
       {/* Our Story Section */}
       <section className="py-16 bg-white" ref={sectionRef}>
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className={`transition-all duration-1000 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="text-center mb-12">
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Our <span className="text-[#1E90FF]">Story</span></h2>
@@ -189,7 +189,7 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <section className="py-16 bg-[#E6F4FF]">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Our <span className="text-[#1E90FF]">Values</span></h2>
             <p className="text-lg text-[#4A4A4A] max-w-2xl mx-auto">
@@ -240,7 +240,7 @@ export default function AboutPage() {
 
       {/* Why Choose Us Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Why Choose <span className="text-[#1E90FF]">Libra Cables</span></h2>
             <p className="text-lg text-[#4A4A4A] max-w-2xl mx-auto">
@@ -302,7 +302,7 @@ export default function AboutPage() {
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 text-center">
           <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">Ready to Power Your Projects with Quality Cables?</h3>
           <p className="text-lg text-white/90 max-w-2xl mx-auto mb-8">
             Contact us today to discuss your requirements and discover the Libra Cables difference.
