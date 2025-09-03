@@ -23,6 +23,7 @@ export default function Navbar() {
           <Link href="/" className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors font-medium">Home</Link>
           <Link href="/products" className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors font-medium">Products</Link>
           <Link href="/about" className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors font-medium">About</Link>
+          <Link href="/quality" className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors font-medium">Quality Assurance</Link>
           <Link href="/contact" className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors font-medium">Contact</Link>
         </div>
 
@@ -60,6 +61,13 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               About
+            </Link>
+            <Link 
+              href="/quality" 
+              className="block text-[#ccd6f6] hover:text-[#64ffda] transition-colors font-medium py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Quality Assurance
             </Link>
             <Link 
               href="/contact" 

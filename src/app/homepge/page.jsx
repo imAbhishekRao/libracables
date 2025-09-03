@@ -194,19 +194,19 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { 
-                img: "/product-house-wiring.jpg", 
+                img: "/House_wiringcabel.png", 
                 title: "House Wiring Cables", 
                 desc: "Reliable, safe, and efficient copper cables for homes and offices.",
                 features: ["Fire resistant", "High conductivity", "Easy installation"]
               },
               { 
-                img: "/product-submersible.jpg", 
+                img: "/submerged.png", 
                 title: "Submersible Flat Cables", 
                 desc: "Durable performance for underwater pump systems.",
                 features: ["Waterproof", "Abrasion resistant", "Long lifespan"]
               },
               { 
-                img: "/product-flexible-industrial.jpg", 
+                img: "/flexible.png", 
                 title: "Flexible Industrial Cables", 
                 desc: "High flexibility and strength for industrial automation.",
                 features: ["Oil resistant", "High temperature rating", "Flexible"]
@@ -220,7 +220,7 @@ export default function Index() {
                     src={p.img} 
                     alt={`${p.title} product image`} 
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                    className="object-contain group-hover:scale-105 transition-transform duration-500" 
                   />
                 </div>
                 <CardHeader>

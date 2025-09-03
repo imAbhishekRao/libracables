@@ -24,7 +24,7 @@ const products = [
     description: "Ideal for residential and commercial buildings, engineered for safety and long service life.",
     applications: ["Homes & offices", "Lighting & fixtures", "Small appliances"],
     icon: Home,
-    image: "/product-house-wiring.jpg",
+    image: "/House_wiringcabel.png",
     features: ["Fire resistant", "High conductivity", "Easy installation", "Long lifespan"]
   },
   {
@@ -32,7 +32,7 @@ const products = [
     description: "Perfect for underwater pump systems with excellent insulation and moisture resistance.",
     applications: ["Borewell pumps", "Irrigation systems", "Water management"],
     icon: Droplets,
-    image: "/product-submersible.jpg",
+    image: "/submerged.png",
     features: ["Waterproof", "Abrasion resistant", "UV resistant", "Flexible"]
   },
   {
@@ -40,7 +40,7 @@ const products = [
     description: "Used in factories, machines, and automation where flexibility and durability are critical.",
     applications: ["Robotics & automation", "Machinery wiring", "Control panels"],
     icon: Factory,
-    image: "/product-flexible-industrial.jpg",
+    image: "/flexible.png",
     features: ["Oil resistant", "High temperature rating", "Flexible", "Durable"]
   },
   {
