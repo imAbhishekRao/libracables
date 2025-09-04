@@ -194,7 +194,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { 
-                img: "/house_wiringcabel2.png", 
+                img: "/House_wiringcabel2.png", 
                 title: "House Wiring Cables", 
                 desc: "Reliable, safe, and efficient copper cables for homes and offices.",
                 features: ["Fire resistant", "High conductivity", "Easy installation"]

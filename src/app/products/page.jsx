@@ -15,7 +15,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import DownloadCatalogButton from "@/components/DownloadCatalogButton";
+import DownloadCatalogButton from "@/app/download catalog/catalog";
 
 // Product images - using your existing product images
 
@@ -25,7 +25,7 @@ const products = [
     description: "Ideal for residential and commercial buildings, engineered for safety and long service life.",
     applications: ["Homes & offices", "Lighting & fixtures", "Small appliances"],
     icon: Home,
-    image: "/house_wiringcabel2.png",
+    image: "/House_wiringcabel2.png",
     features: ["Fire resistant", "High conductivity", "Easy installation", "Long lifespan"]
   },
   {

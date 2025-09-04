@@ -6,16 +6,29 @@ import { Download, ChevronRight } from "lucide-react";
 export default function DownloadCatalogButton({ variant = "cta" }) {
   const [isDownloading, setIsDownloading] = useState(false);
 
-  const handleDownloadCatalog = () => {
+  const handleDownloadCatalog = async () => {
     setIsDownloading(true);
     
-    // Create a temporary anchor element to trigger the download
-    const link = document.createElement('a');
-    link.href = '/libra cabel price list.pdf'; // Path to your PDF in the public folder
-    link.download = 'Libra-Cables-Price-List.pdf'; // The filename for the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    try {
+      // Method 1: Try direct download first
+      const link = document.createElement('a');
+      link.href = '/catalog.pdf';
+      link.download = 'Libra-Cables-Catalog.pdf';
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // If that doesn't work, try opening in new tab
+      setTimeout(() => {
+        window.open('/catalog.pdf', '_blank');
+      }, 100);
+      
+    } catch (error) {
+      console.error('Download error:', error);
+      // Fallback: Open in new tab
+      window.open('/catalog.pdf', '_blank');
+    }
     
     // Reset downloading state after a short delay
     setTimeout(() => setIsDownloading(false), 1500);
