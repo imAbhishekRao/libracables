@@ -68,7 +68,7 @@ export default function AboutPage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center md:text-left">
               <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
                 About <span className="text-[#00C4CC]">Libra Cables</span>
               </h1>
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 For over 25 years, Libra Cables has been a trusted manufacturer of high-quality copper cables, 
                 powering progress across India with reliable and innovative wiring solutions from our facility in Delhi.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Button asChild className="bg-transparent border border-white text-white hover:bg-white hover:text-[#0A2E57] px-8 py-6 text-lg rounded-full transition-colors">
                   <Link href="/products" className="flex items-center gap-2">
                     Our Products <ArrowRight size={20} />
@@ -90,11 +90,11 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#1E90FF] to-[#00C4CC] flex items-center justify-center">
+            <div className="relative h-32 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#1E90FF] to-[#00C4CC] flex items-center justify-center">
               <div className="text-center text-white">
-                <Factory className="mx-auto mb-4" size={64} />
-                <h3 className="text-2xl font-bold">Manufacturing Facility</h3>
-                <p className="text-lg opacity-90">Delhi, India</p>
+                <Factory className="mx-auto mb-2 md:mb-4" size={32} />
+                <h3 className="text-lg md:text-2xl font-bold">Manufacturing Facility</h3>
+                <p className="text-sm md:text-lg opacity-90">Delhi, India</p>
               </div>
             </div>
           </div>
@@ -135,15 +135,15 @@ export default function AboutPage() {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-              <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#1E90FF] to-[#00C4CC] flex items-center justify-center">
+              <div className="relative h-32 md:h-80 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#1E90FF] to-[#00C4CC] flex items-center justify-center">
                 <div className="text-center text-white">
-                  <Zap className="mx-auto mb-4" size={64} />
-                  <h3 className="text-2xl font-bold">Manufacturing Process</h3>
-                  <p className="text-lg opacity-90">Quality & Innovation</p>
+                  <Zap className="mx-auto mb-2 md:mb-4" size={32} />
+                  <h3 className="text-lg md:text-2xl font-bold">Manufacturing Process</h3>
+                  <p className="text-sm md:text-lg opacity-90">Quality & Innovation</p>
                 </div>
               </div>
               
-              <div>
+              <div className="text-center md:text-left">
                 <h3 className="font-display text-2xl font-bold text-[#0A2E57] mb-4">Our Journey</h3>
                 <p className="text-[#4A4A4A] mb-4">
                   Founded in 1998, Libra Cables began as a small manufacturing unit in Delhi with a vision to provide 
@@ -162,7 +162,7 @@ export default function AboutPage() {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1">
+              <div className="order-2 lg:order-1 text-center md:text-left">
                 <h3 className="font-display text-2xl font-bold text-[#0A2E57] mb-4">Our Mission & Vision</h3>
                 <p className="text-[#4A4A4A] mb-4">
                   Our mission is to deliver superior quality copper cables that ensure safety, reliability, 
@@ -175,11 +175,11 @@ export default function AboutPage() {
                 </p>
               </div>
               
-              <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2 bg-gradient-to-br from-[#1E90FF] to-[#00C4CC] flex items-center justify-center">
+              <div className="relative h-32 md:h-80 rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2 bg-gradient-to-br from-[#1E90FF] to-[#00C4CC] flex items-center justify-center">
                 <div className="text-center text-white">
-                  <Users className="mx-auto mb-4" size={64} />
-                  <h3 className="text-2xl font-bold">Our Team</h3>
-                  <p className="text-lg opacity-90">Expert Professionals</p>
+                  <Users className="mx-auto mb-2 md:mb-4" size={32} />
+                  <h3 className="text-lg md:text-2xl font-bold">Our Team</h3>
+                  <p className="text-sm md:text-lg opacity-90">Expert Professionals</p>
                 </div>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
               { 
                 icon: ShieldCheck, 
@@ -222,15 +222,20 @@ export default function AboutPage() {
             ].map((item, index) => (
               <Card 
                 key={item.title} 
-                className="border-[#1E90FF]/20 hover:shadow-md transition-all duration-300 hover:border-[#1E90FF]/40 group overflow-hidden text-center"
+                className="border-[#1E90FF]/20 hover:shadow-md transition-all duration-300 hover:border-[#1E90FF]/40 group overflow-hidden"
               >
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <CardContent className="p-8">
-                  <div className="p-4 rounded-full bg-[#E6F4FF] group-hover:bg-[#D1E9FF] transition-colors inline-flex mb-6">
-                    <item.icon className="text-[#1E90FF]" size={32} />
+                <CardContent className="p-4 md:p-8">
+                  <div className="flex items-center gap-4">
+                    <div className="p-2 md:p-4 rounded-full bg-[#E6F4FF] group-hover:bg-[#D1E9FF] transition-colors flex-shrink-0">
+                      <item.icon className="text-[#1E90FF]" size={24} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-base md:text-lg group-hover:text-[#1E90FF] transition-colors text-[#0A2E57] mb-1 md:mb-3">{item.title}</h3>
+                      <p className="text-xs md:text-sm text-[#4A4A4A] hidden md:block">{item.description}</p>
+                    </div>
                   </div>
-                  <h3 className="font-semibold text-lg group-hover:text-[#1E90FF] transition-colors text-[#0A2E57] mb-3">{item.title}</h3>
-                  <p className="text-sm text-[#4A4A4A]">{item.description}</p>
+                  <p className="text-xs md:text-sm text-[#4A4A4A] mt-2 md:hidden">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -286,13 +291,13 @@ export default function AboutPage() {
                 className="border-[#1E90FF]/20 hover:shadow-md transition-all duration-300 hover:border-[#1E90FF]/40 group overflow-hidden"
               >
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex flex-col md:flex-row items-center gap-4 mb-4 text-center md:text-left">
                     <div className="p-3 rounded-full bg-[#E6F4FF] group-hover:bg-[#D1E9FF] transition-colors">
                       <item.icon className="text-[#1E90FF]" size={24} />
                     </div>
                     <h3 className="font-semibold group-hover:text-[#1E90FF] transition-colors text-[#0A2E57]">{item.title}</h3>
                   </div>
-                  <p className="text-sm text-[#4A4A4A]">{item.description}</p>
+                  <p className="text-sm text-[#4A4A4A] text-center md:text-left">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
