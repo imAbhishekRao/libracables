@@ -9,28 +9,11 @@ import {
   Twitter, 
   Linkedin, 
   Instagram,
-  ArrowUp,
   Building2,
   ChevronRight,
-  Clock
 } from "lucide-react";
-import { useEffect, useState } from "react";
 
 export default function Footer() {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 500);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <footer className="bg-[#0A2E57] text-white relative overflow-hidden">
@@ -183,14 +166,6 @@ export default function Footer() {
                   www.libracables.com
                 </a>
               </li>
-              <li className="flex items-start">
-                <Clock className="text-[#1E90FF] mr-3 mt-1 flex-shrink-0" size={20} />
-                <div className="text-white/80">
-                  <div className="font-medium">Business Hours</div>
-                  <div className="text-sm">9 am to 5 pm</div>
-                  <div className="text-sm">Tuesday Off</div>
-                </div>
-              </li>
             </ul>
           </div>
         </div>
@@ -207,16 +182,6 @@ export default function Footer() {
         </div>
       </div>
       
-      {/* Scroll to top button */}
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-3 bg-[#1E90FF] hover:bg-[#0A7AEA] text-white rounded-full shadow-lg transition-all duration-300 z-50"
-          aria-label="Scroll to top"
-        >
-          <ArrowUp size={20} />
-        </button>
-      )}
 
       <style jsx>{`
         @keyframes moveLine {

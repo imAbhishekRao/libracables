@@ -1,4 +1,6 @@
 "use client";
+import { Button } from "@/components/ui/button";
+import { Download, ChevronRight } from "lucide-react";
 
 export default function DownloadCatalogButton({ variant = "cta" }) {
   const handleDownload = () => {
@@ -12,21 +14,27 @@ export default function DownloadCatalogButton({ variant = "cta" }) {
 
   if (variant === "product") {
     return (
-      <button
+      <Button 
         onClick={handleDownload}
-        className="w-full border border-[#1E90FF] text-[#1E90FF] hover:bg-[#E6F4FF] px-4 py-3 rounded-md transition-colors"
+        variant="outline" 
+        className="w-full border-[#1E90FF] text-[#1E90FF] hover:bg-[#1E90FF] hover:text-white rounded-full group/btn h-12 transition-all duration-300"
       >
+        <Download size={18} className="mr-2" />
         Download Brochure
-      </button>
+        <ChevronRight size={18} className="ml-1 group-hover/btn:translate-x-1 transition-transform" />
+      </Button>
     );
   }
 
   return (
-    <button
+    <Button 
       onClick={handleDownload}
-      className="inline-flex items-center rounded-md px-4 py-2 bg-black text-white"
+      variant="default" 
+      size="lg" 
+      className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-6 text-lg rounded-full transition-colors flex items-center gap-2"
     >
-      Download catalog
-    </button>
+      <Download size={20} />
+      Download Catalog
+    </Button>
   );
 }
