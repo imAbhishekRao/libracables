@@ -15,6 +15,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import DownloadCatalogButton from "@/components/DownloadCatalogButton";
 
 // Product images - using your existing product images
 
@@ -24,7 +25,7 @@ const products = [
     description: "Ideal for residential and commercial buildings, engineered for safety and long service life.",
     applications: ["Homes & offices", "Lighting & fixtures", "Small appliances"],
     icon: Home,
-    image: "/House_wiringcabel.png",
+    image: "/house_wiringcabel2.png",
     features: ["Fire resistant", "High conductivity", "Easy installation", "Long lifespan"]
   },
   {
@@ -32,7 +33,7 @@ const products = [
     description: "Perfect for underwater pump systems with excellent insulation and moisture resistance.",
     applications: ["Borewell pumps", "Irrigation systems", "Water management"],
     icon: Droplets,
-    image: "/submerged.png",
+    image: "/submerged2.png",
     features: ["Waterproof", "Abrasion resistant", "UV resistant", "Flexible"]
   },
   {
@@ -40,7 +41,7 @@ const products = [
     description: "Used in factories, machines, and automation where flexibility and durability are critical.",
     applications: ["Robotics & automation", "Machinery wiring", "Control panels"],
     icon: Factory,
-    image: "/flexible.png",
+    image: "/flexible2.png",
     features: ["Oil resistant", "High temperature rating", "Flexible", "Durable"]
   },
   {
@@ -48,7 +49,7 @@ const products = [
     description: "For precise signal and power control in various industrial applications.",
     applications: ["Instrumentation", "Signal control", "PLC systems"],
     icon: Settings,
-    image: "/controlCabel.png",
+    image: "/contol_cabel2.png",
     features: ["EMI shielded", "Precision engineered", "Multiple cores", "Reliable performance"]
   },
   {
@@ -56,7 +57,7 @@ const products = [
     description: "High-performance cables specifically designed for solar power systems and renewable energy applications.",
     applications: ["Solar panels", "Solar inverters", "Renewable energy systems"],
     icon: Flame,
-    image: "/solar_cabel.png",
+    image: "/solar_cabel2.png",
     features: ["UV resistant", "Weatherproof", "High conductivity", "Long lifespan"]
   },
 ];
@@ -187,13 +188,7 @@ export default function Products() {
                     </div>
                     
                     <div className="mt-6 pt-4 border-t border-[#1E90FF]/10">
-                      <Button asChild variant="outline" className="w-full border-[#1E90FF] text-[#1E90FF] hover:bg-[#E6F4FF] group/btn h-12">
-                        <div className="flex items-center justify-center">
-                          <Download size={18} className="mr-2" />
-                          Download Brochure
-                          <ChevronRight size={18} className="ml-1 group-hover/btn:translate-x-1 transition-transform" />
-                        </div>
-                      </Button>
+                      <DownloadCatalogButton variant="product" />
                     </div>
                   </CardContent>
                 </Card>
@@ -225,7 +220,7 @@ export default function Products() {
             {[
               {
                 title: "Standards Compliance",
-                items: ["IS 694", "IS 1554", "IS 7098", "IS 9968", "IEC 60502", "Customer Specifications"]
+                items: ["IS 694"]
               },
               {
                 title: "Voltage Rating",
@@ -266,11 +261,7 @@ export default function Products() {
                 Contact Our Team <ArrowRight size={20} />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-6 text-lg rounded-full transition-colors">
-              <Link href="/downloads" className="flex items-center gap-2">
-                Download Catalog <Download size={20} />
-              </Link>
-            </Button>
+            <DownloadCatalogButton />
           </div>
         </div>
       </section>

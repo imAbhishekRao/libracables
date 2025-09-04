@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 import { 
   Phone, 
   Mail, 
@@ -138,7 +139,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-[#0A2E57] group-hover:text-[#1E90FF] transition-colors">Address</h3>
-                      <p className="text-[#4A4A4A] mt-1">M-215, Sector-5, DSIIDC Banana Industrial Area, Delhi-39</p>
+                      <p className="text-[#4A4A4A] mt-1">A-5/7, Jhilmil Industrial Area, Delhi - 110095</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -162,8 +163,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-[#0A2E57] group-hover:text-[#1E90FF] transition-colors">Business Hours</h3>
-                      <p className="text-[#4A4A4A] mt-1">Monday - Friday: 9AM - 6PM</p>
-                      <p className="text-[#4A4A4A]">Saturday: 10AM - 2PM</p>
+                      <p className="text-[#4A4A4A] mt-1">9 am to 5 pm</p>
+                      <p className="text-[#4A4A4A]">Tuesday Off</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -320,9 +321,9 @@ export default function ContactPage() {
           
           <div className="text-center mt-12">
             <Button asChild variant="outline" className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white rounded-full transition-colors">
-              <a href="/faq" className="flex items-center gap-2">
+              <Link href="/faq" className="flex items-center gap-2">
                 View All FAQs <ChevronRight size={18} />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

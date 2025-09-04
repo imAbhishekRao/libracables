@@ -11,7 +11,8 @@ import {
   Instagram,
   ArrowUp,
   Building2,
-  ChevronRight
+  ChevronRight,
+  Clock
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -170,7 +171,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <MapPin className="text-[#1E90FF] mr-3 mt-1 flex-shrink-0" size={20} />
-                <span className="text-white/80">M-215, Sector-5, DSIIDC Banana Industrial Area, Delhi-39</span>
+                <span className="text-white/80">A-5/7, Jhilmil Industrial Area, Delhi - 110095</span>
               </li>
               <li className="flex items-center">
                 <Mail className="text-[#1E90FF] mr-3 flex-shrink-0" size={20} />
@@ -182,15 +183,15 @@ export default function Footer() {
                   www.libracables.com
                 </a>
               </li>
+              <li className="flex items-start">
+                <Clock className="text-[#1E90FF] mr-3 mt-1 flex-shrink-0" size={20} />
+                <div className="text-white/80">
+                  <div className="font-medium">Business Hours</div>
+                  <div className="text-sm">9 am to 5 pm</div>
+                  <div className="text-sm">Tuesday Off</div>
+                </div>
+              </li>
             </ul>
-            
-            <div className="mt-6">
-              <Button asChild className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white rounded-full transition-colors">
-                <Link href="/contact" className="flex items-center">
-                  Request a Quote <ChevronRight size={16} className="ml-1" />
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
         

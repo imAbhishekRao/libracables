@@ -194,19 +194,19 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { 
-                img: "/House_wiringcabel.png", 
+                img: "/house_wiringcabel2.png", 
                 title: "House Wiring Cables", 
                 desc: "Reliable, safe, and efficient copper cables for homes and offices.",
                 features: ["Fire resistant", "High conductivity", "Easy installation"]
               },
               { 
-                img: "/submerged.png", 
+                img: "/submerged2.png", 
                 title: "Submersible Flat Cables", 
                 desc: "Durable performance for underwater pump systems.",
                 features: ["Waterproof", "Abrasion resistant", "Long lifespan"]
               },
               { 
-                img: "/flexible.png", 
+                img: "/flexible2.png", 
                 title: "Flexible Industrial Cables", 
                 desc: "High flexibility and strength for industrial automation.",
                 features: ["Oil resistant", "High temperature rating", "Flexible"]

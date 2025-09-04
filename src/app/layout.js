@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body className="font-sans antialiased">
         <Navbar />
         {children}
+        <FloatingWhatsApp />
       </body>
     </html>
   );
