@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Bolt, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -14,7 +14,11 @@ export default function Navbar() {
     <nav className="bg-[#0a192f]/90 backdrop-blur-md fixed w-full z-50 py-3 border-b border-[#64ffda]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-[#64ffda] flex items-center">
-          <Bolt className="mr-3" />
+          <img 
+            src="/ew.png" 
+            alt="Libra Cables Icon" 
+            className="mr-3 h-8 w-8 object-contain"
+          />
           <span>Libra Cables</span>
         </Link>
         

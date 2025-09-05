@@ -11,10 +11,12 @@ export default function Navbar() {
             aria-label="Libra Cables Home"
           >
             <div className="flex items-center">
-              <div className="h-8 w-8 rounded-md bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] flex items-center justify-center mr-2">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10 1a1 1 0 011 1v1a1 1 0 11-2 0V2a1 1 0 011-1zm4 7a3 3 0 11-6 0 3 3 0 016 0zm2.657 5.657a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 13.636a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM6 10a1 1 0 01-1 1H4a1 1 0 110-2h1a1 1 0 011 1zm2.293-7.707a1 1 0 011.414 0l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
+              <div className="h-8 w-8 rounded-md flex items-center justify-center mr-2 border border-gray-200">
+                <img
+                  src="/ew.png"
+                  alt="Libra Cables Icon"
+                  className="h-8 w-8 object-contain"
+                />
               </div>
               <span className="font-display text-xl font-bold text-[#0A2E57] group-hover:text-[#1E90FF] transition-colors">
                 Libra <span className="text-[#1E90FF]">Cables</span>
