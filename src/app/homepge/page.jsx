@@ -114,7 +114,7 @@ export default function Index() {
             ].map((stat, index) => (
               <div 
                 key={index} 
-                className="text-center p-6 bg-white rounded-xl shadow-sm border border-[#1E90FF]/20 animate opacity-0 translate-y-5 transition-all duration-1000"
+                className="text-center p-6 bg-gradient-to-br from-white/90 to-white/70 rounded-xl shadow-sm border border-[#1E90FF]/20 animate opacity-0 translate-y-5 transition-all duration-1000 backdrop-blur-sm"
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="text-3xl md:text-4xl font-bold text-[#1E90FF]">{stat.number}</div>
@@ -166,7 +166,7 @@ export default function Index() {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 rounded-full bg-white group-hover:bg-[#F0F8FF] transition-colors">
+                  <div className="p-3 rounded-full bg-gradient-to-br from-white/90 to-white/70 group-hover:bg-gradient-to-br group-hover:from-[#F0F8FF] group-hover:to-[#E6F4FF] transition-colors backdrop-blur-sm">
                     <item.icon className="text-[#1E90FF]" size={24} />
                   </div>
                   <CardTitle className="text-lg group-hover:text-[#1E90FF] transition-colors text-[#0A2E57] font-semibold">{item.title}</CardTitle>
@@ -280,7 +280,7 @@ export default function Index() {
             >
               <CardHeader>
                 <div className="flex items-center gap-4">
-                  <div className="p-3 rounded-full bg-white group-hover:bg-[#F0F8FF] transition-colors">
+                  <div className="p-3 rounded-full bg-gradient-to-br from-white/90 to-white/70 group-hover:bg-gradient-to-br group-hover:from-[#F0F8FF] group-hover:to-[#E6F4FF] transition-colors backdrop-blur-sm">
                     <Icon className="text-[#1E90FF]" size={24} />
                   </div>
                   <CardTitle className="text-base group-hover:text-[#1E90FF] transition-colors text-[#0A2E57] font-semibold">{text}</CardTitle>

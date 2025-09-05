@@ -13,7 +13,7 @@ const industries = [
 
 export default function Industries() {
   return (
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-20">
       <header className="mb-8">
         <h1 className="font-display text-3xl">Industries Served</h1>
         <p className="mt-2 text-muted-foreground max-w-3xl">
@@ -39,6 +39,7 @@ export default function Industries() {
     </div>
   );
 }
+
 
 
 

@@ -63,9 +63,9 @@ export default function TermsConditions() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#F7FAFC]">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
+      <section className="relative py-32 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
           {[...Array(3)].map((_, i) => (
             <div 
@@ -98,7 +98,8 @@ export default function TermsConditions() {
       </section>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 py-12">
+      <section className="py-16 bg-gradient-to-b from-[#F0F8FF] to-[#E6F4FF]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar Navigation */}
           <div className="lg:w-1/4">
@@ -343,7 +344,8 @@ export default function TermsConditions() {
             </Card>
           </div>
         </div>
-      </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] text-white py-16">

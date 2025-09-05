@@ -52,7 +52,7 @@ export default function QualityPage() {
   return (
     <div className="min-h-screen overflow-hidden">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
+      <section className="relative py-32 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
           {[...Array(5)].map((_, i) => (
             <div 
@@ -80,7 +80,7 @@ export default function QualityPage() {
       </section>
 
       {/* Quality Intro */}
-      <section className="py-16 bg-white" ref={sectionRef}>
+      <section className="py-16 bg-gradient-to-b from-[#E6F4FF] to-[#D1E9FF]" ref={sectionRef}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className={`transition-all duration-1000 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -111,7 +111,7 @@ export default function QualityPage() {
               
               <div className="relative">
                 <div className="bg-gradient-to-br from-[#1E90FF] to-[#00C4CC] p-1 rounded-2xl">
-                  <div className="bg-white rounded-2xl p-8">
+                  <div className="bg-gradient-to-br from-white/95 to-white/85 rounded-2xl p-8 backdrop-blur-sm">
                     <div className="grid grid-cols-2 gap-6">
                       <div className="text-center">
                         <div className="bg-[#1E90FF]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -221,7 +221,7 @@ export default function QualityPage() {
       </section>
 
       {/* Testing Process */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-[#F0F8FF] to-[#E6F4FF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-[#0A2E57]">
@@ -284,7 +284,7 @@ export default function QualityPage() {
             </div>
             
             <div className="bg-gradient-to-br from-[#1E90FF] to-[#00C4CC] p-1 rounded-2xl">
-              <div className="bg-white rounded-2xl p-8">
+              <div className="bg-gradient-to-br from-white/95 to-white/85 rounded-2xl p-8 backdrop-blur-sm">
                 <h3 className="text-2xl font-bold text-[#0A2E57] mb-6 text-center">
                   Testing Equipment
                 </h3>
@@ -386,12 +386,12 @@ export default function QualityPage() {
             Discover why leading industries trust Libra Cables for their critical electrical infrastructure needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                         <Button asChild className="bg-transparent border border-white text-white hover:bg-white hover:text-[#0A2E57] px-8 py-3 text-lg transition-colors">
+                         <Button asChild className="bg-transparent border border-white text-white hover:bg-white hover:text-[#0A2E57] px-8 py-3 text-lg rounded-full transition-colors">
                <Link href="/products" className="flex items-center">
                  View Our Products <ArrowRight className="ml-2" size={20} />
                </Link>
              </Button>
-             <Button asChild className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-3 text-lg transition-colors">
+             <Button asChild className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white px-8 py-3 text-lg rounded-full transition-colors">
                <Link href="/contact" className="flex items-center">
                  Contact Us <ChevronRight className="ml-2" size={20} />
                </Link>

@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ChevronRight, ArrowRight, Download, Shield } from "lucide-react";
+import { ChevronRight, ArrowRight, Shield } from "lucide-react";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
@@ -51,9 +51,9 @@ export default function PrivacyPolicy() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F7FAFC]">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
+      <section className="relative py-32 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
           {[...Array(3)].map((_, i) => (
             <div 
@@ -86,7 +86,8 @@ export default function PrivacyPolicy() {
       </section>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 py-12">
+      <section className="py-16 bg-gradient-to-b from-[#F0F8FF] to-[#E6F4FF]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar Navigation */}
           <div className="lg:w-1/4">
@@ -276,27 +277,12 @@ export default function PrivacyPolicy() {
                   </div>
                 </div>
 
-                {/* Download Section */}
-                <div className="mt-12 p-6 bg-[#E6F4FF] rounded-lg">
-                  <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                    <div>
-                      <h3 className="font-semibold text-[#0A2E57]">Download Privacy Policy</h3>
-                      <p className="text-sm text-[#4A4A4A] mt-1">
-                        Save a copy of our Privacy Policy for your records
-                      </p>
-                    </div>
-                    <Button asChild className="bg-[#1E90FF] hover:bg-[#0A7AEA] text-white">
-                      <Link href="/docs/privacy-policy.pdf" className="flex items-center gap-2">
-                        Download PDF <Download size={18} />
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           </div>
         </div>
-      </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] text-white py-16">

@@ -130,9 +130,9 @@ export default function FAQPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F7FAFC]">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
+      <section className="relative py-32 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
           {[...Array(3)].map((_, i) => (
             <div 
@@ -165,7 +165,8 @@ export default function FAQPage() {
       </section>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8 py-12">
+      <section className="py-16 bg-gradient-to-b from-[#F0F8FF] to-[#E6F4FF]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar Navigation */}
           <div className="lg:w-1/4">
@@ -215,7 +216,7 @@ export default function FAQPage() {
                           <div key={item.id} className="border border-[#1E90FF]/20 rounded-lg overflow-hidden">
                             <button
                               onClick={() => toggleItem(item.id)}
-                              className="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-[#F7FAFC] transition-colors"
+                              className="flex items-center justify-between w-full p-4 text-left bg-white/90 hover:bg-white transition-colors backdrop-blur-sm"
                             >
                               <span className="font-medium text-[#0A2E57]">{item.question}</span>
                               {openItems[item.id] ? (
@@ -225,7 +226,7 @@ export default function FAQPage() {
                               )}
                             </button>
                             {openItems[item.id] && (
-                              <div className="p-4 bg-[#F7FAFC] border-t border-[#1E90FF]/20">
+                              <div className="p-4 bg-white/80 border-t border-[#1E90FF]/20 backdrop-blur-sm">
                                 <p className="text-[#4A4A4A]">{item.answer}</p>
                               </div>
                             )}
@@ -256,7 +257,8 @@ export default function FAQPage() {
             </Card>
           </div>
         </div>
-      </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-[#1E90FF] to-[#00C4CC] text-white py-16">

@@ -49,7 +49,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen overflow-hidden">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
+      <section className="relative py-32 bg-gradient-to-b from-[#0A2E57] to-[#1E3A8A]">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
           {[...Array(5)].map((_, i) => (
             <div 
@@ -113,7 +113,7 @@ export default function AboutPage() {
             ].map((stat, index) => (
               <div 
                 key={index} 
-                className="text-center p-6 bg-white rounded-xl shadow-sm border border-[#1E90FF]/20"
+                className="text-center p-6 bg-gradient-to-br from-white/90 to-white/70 rounded-xl shadow-sm border border-[#1E90FF]/20 backdrop-blur-sm"
               >
                 <div className="text-3xl md:text-4xl font-bold text-[#1E90FF]">{stat.number}</div>
                 <div className="mt-2 text-sm md:text-base text-[#4A4A4A]">{stat.label}</div>
@@ -124,7 +124,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-16 bg-white" ref={sectionRef}>
+      <section className="py-16 bg-gradient-to-b from-[#E6F4FF] to-[#D1E9FF]" ref={sectionRef}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className={`transition-all duration-1000 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="text-center mb-12">
@@ -244,7 +244,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-[#F0F8FF] to-[#E6F4FF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-[#0A2E57]">Why Choose <span className="text-[#1E90FF]">Libra Cables</span></h2>

@@ -46,7 +46,7 @@ export default function Footer() {
               Manufacturing premium copper cables for industrial, commercial, and residential applications with a commitment to quality and reliability.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
+              <a href="https://www.facebook.com/libracableindia/photos/a.158564978946506/200885298047807/?type=3&theater" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
                 <Facebook size={20} />
               </a>
               <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
