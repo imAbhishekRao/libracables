@@ -38,12 +38,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center mb-6">
-              <Building2 className="text-[#1E90FF] mr-2" size={28} />
-              <h3 className="text-2xl font-bold">Libra Cables</h3>
+            <div className="flex justify-center lg:justify-start mb-6 ">
+              <img 
+                src="/bg_logo.png" 
+                alt="Libra Cables Logo" 
+                className="h-50 w-auto object-contain"
+              />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
-              Manufacturing premium copper cables for industrial, commercial, and residential applications with a commitment to quality and reliability.
+              
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/libracableindia/photos/a.158564978946506/200885298047807/?type=3&theater" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
