@@ -25,7 +25,7 @@ const products = [
     description: "Ideal for residential and commercial buildings, engineered for safety and long service life.",
     applications: ["Homes & offices", "Lighting & fixtures", "Small appliances"],
     icon: Home,
-    image: "/House_wiringcabel2.png",
+    image: "/housecable.png",
     features: ["Fire resistant", "High conductivity", "Easy installation", "Long lifespan"]
   },
   {
@@ -33,7 +33,7 @@ const products = [
     description: "Perfect for underwater pump systems with excellent insulation and moisture resistance.",
     applications: ["Borewell pumps", "Irrigation systems", "Water management"],
     icon: Droplets,
-    image: "/submerged2.png",
+    image: "/submerged.png",
     features: ["Waterproof", "Abrasion resistant", "UV resistant", "Flexible"]
   },
   {
@@ -41,7 +41,7 @@ const products = [
     description: "Used in factories, machines, and automation where flexibility and durability are critical.",
     applications: ["Robotics & automation", "Machinery wiring", "Control panels"],
     icon: Factory,
-    image: "/flexible2.png",
+    image: "/flexible.png",
     features: ["Oil resistant", "High temperature rating", "Flexible", "Durable"]
   },
   {
@@ -49,7 +49,7 @@ const products = [
     description: "For precise signal and power control in various industrial applications.",
     applications: ["Instrumentation", "Signal control", "PLC systems"],
     icon: Settings,
-    image: "/contol_cabel2.png",
+    image: "/controlCabel.png",
     features: ["EMI shielded", "Precision engineered", "Multiple cores", "Reliable performance"]
   },
   {
@@ -57,7 +57,7 @@ const products = [
     description: "High-performance cables specifically designed for solar power systems and renewable energy applications.",
     applications: ["Solar panels", "Solar inverters", "Renewable energy systems"],
     icon: Flame,
-    image: "/solar_cabel2.png",
+    image: "/solar.png",
     features: ["UV resistant", "Weatherproof", "High conductivity", "Long lifespan"]
   },
 ];

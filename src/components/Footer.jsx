@@ -6,9 +6,6 @@ import {
   Mail, 
   MapPin, 
   Facebook, 
-  Twitter, 
-  Linkedin, 
-  Instagram,
   Building2,
   ChevronRight,
 } from "lucide-react";
@@ -48,20 +45,11 @@ export default function Footer() {
             <p className="text-white/80 mb-6 leading-relaxed">
               
             </p>
-            <div className="flex space-x-4">
-              <a href="https://www.facebook.com/libracableindia/photos/a.158564978946506/200885298047807/?type=3&theater" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
-                <Instagram size={20} />
-              </a>
-            </div>
+             <div className="flex justify-center lg:justify-start">
+               <a href="https://www.facebook.com/libracableindia" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-[#1E90FF] transition-colors">
+                 <Facebook size={20} />
+               </a>
+             </div>
           </div>
 
           {/* Quick Links */}

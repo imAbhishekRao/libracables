@@ -191,25 +191,31 @@ export default function Index() {
           </p>
         </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { 
-                img: "/House_wiringcabel2.png", 
+                img: "/housecable.png", 
                 title: "House Wiring Cables", 
                 desc: "Reliable, safe, and efficient copper cables for homes and offices.",
                 features: ["Fire resistant", "High conductivity", "Easy installation"]
               },
               { 
-                img: "/submerged2.png", 
+                img: "/submerged.png", 
                 title: "Submersible Flat Cables", 
                 desc: "Durable performance for underwater pump systems.",
                 features: ["Waterproof", "Abrasion resistant", "Long lifespan"]
               },
               { 
-                img: "/flexible2.png", 
+                img: "/flexible.png", 
                 title: "Flexible Industrial Cables", 
                 desc: "High flexibility and strength for industrial automation.",
                 features: ["Oil resistant", "High temperature rating", "Flexible"]
+              },
+              { 
+                img: "/controlCabel.png", 
+                title: "Control Cables", 
+                desc: "For precise signal and power control in various industrial applications.",
+                features: ["EMI shielded", "Precision engineered", "Multiple cores"]
               },
             ].map((p, index) => (
               <Card key={p.title} className="overflow-hidden group border-[#1E90FF]/20 hover:shadow-lg transition-all duration-300 animate opacity-0 translate-y-5 transition-all duration-1000"
